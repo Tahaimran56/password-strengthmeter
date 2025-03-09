@@ -24,7 +24,7 @@ if password:
     strength = check_password_strength(password)
     st.progress(strength / 4)
     
-    levels = ["Very Weak", "Weak", "Moderate", "Strong", "Very Strong"]
+    levels = ["Weak", "Moderate", "Strong", "Very Strong"]
     st.write(f"**Strength:** {levels[strength-1] if strength > 0 else 'Very Weak'}")
 if st.button("signup"):
     st.write("signup-")
