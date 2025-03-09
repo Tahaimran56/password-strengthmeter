@@ -9,8 +9,6 @@ def check_password_strength(password):
         strength += 1
     if re.search(r"[a-z]", password):
         strength += 1
-    # if re.search(r"\d", password):
-    #     strength += 1
     if re.search(r"[!@#$%^&*(),.?\":{}|<>]", password):
         strength += 1
 
